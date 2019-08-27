@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D0BE5895D94D97AFAC398F /* Pods_EasytrackingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D91A8238D57C6B4188155E2 /* Pods_EasytrackingTests.framework */; };
 		3FDE25E223140A8F005315B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE25E123140A8F005315B9 /* AppDelegate.swift */; };
-		3FDE25E423140A8F005315B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE25E323140A8F005315B9 /* ViewController.swift */; };
 		3FDE25E723140A8F005315B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE25E523140A8F005315B9 /* Main.storyboard */; };
 		3FDE25E923140A90005315B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE25E823140A90005315B9 /* Assets.xcassets */; };
 		3FDE25EC23140A90005315B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE25EA23140A90005315B9 /* LaunchScreen.storyboard */; };
 		3FDE25F723140A90005315B9 /* EasytrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE25F623140A90005315B9 /* EasytrackingTests.swift */; };
 		3FDE260223140A90005315B9 /* EasytrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE260123140A90005315B9 /* EasytrackingUITests.swift */; };
+		3FDE2DBF23148976005315B9 /* QRDecodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE2DBE23148976005315B9 /* QRDecodeViewController.swift */; };
+		3FDE2DC423149186005315B9 /* EasyTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE2DC323149186005315B9 /* EasyTracking.swift */; };
+		86E3B660A83A71F3DC77BD90 /* Pods_Easytracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE42D55E8D5D14084E1CCBA /* Pods_Easytracking.framework */; };
+		A40AC032FCAA2C867F6AD5AC /* Pods_EasytrackingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350A35ABF635F46E57D59EF1 /* Pods_EasytrackingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03AA0EB9AAE9BDCB05043C50 /* Pods-EasytrackingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasytrackingTests.debug.xcconfig"; path = "Target Support Files/Pods-EasytrackingTests/Pods-EasytrackingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D91A8238D57C6B4188155E2 /* Pods_EasytrackingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasytrackingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		350A35ABF635F46E57D59EF1 /* Pods_EasytrackingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasytrackingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE25DE23140A8F005315B9 /* Easytracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easytracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE25E123140A8F005315B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FDE25E323140A8F005315B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FDE25E623140A8F005315B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FDE25E823140A90005315B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDE25EB23140A90005315B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		3FDE25FD23140A90005315B9 /* EasytrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasytrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE260123140A90005315B9 /* EasytrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasytrackingUITests.swift; sourceTree = "<group>"; };
 		3FDE260323140A90005315B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDE2DBE23148976005315B9 /* QRDecodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRDecodeViewController.swift; sourceTree = "<group>"; };
+		3FDE2DC323149186005315B9 /* EasyTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTracking.swift; sourceTree = "<group>"; };
+		572C5FF92102A717CB6DD686 /* Pods-EasytrackingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasytrackingTests.release.xcconfig"; path = "Target Support Files/Pods-EasytrackingTests/Pods-EasytrackingTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DE42D55E8D5D14084E1CCBA /* Pods_Easytracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easytracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62458CA12D10A0D9E3F8F7 /* Pods-EasytrackingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasytrackingUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasytrackingUITests/Pods-EasytrackingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0E9DAA225F63A73E32E9C09 /* Pods-Easytracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easytracking.release.xcconfig"; path = "Target Support Files/Pods-Easytracking/Pods-Easytracking.release.xcconfig"; sourceTree = "<group>"; };
+		B344822680EF8BF4524993B8 /* Pods-EasytrackingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasytrackingUITests.release.xcconfig"; path = "Target Support Files/Pods-EasytrackingUITests/Pods-EasytrackingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F29B0097A738EE32365BDFB8 /* Pods-Easytracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easytracking.debug.xcconfig"; path = "Target Support Files/Pods-Easytracking/Pods-Easytracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E3B660A83A71F3DC77BD90 /* Pods_Easytracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D0BE5895D94D97AFAC398F /* Pods_EasytrackingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40AC032FCAA2C867F6AD5AC /* Pods_EasytrackingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				3FDE25F523140A90005315B9 /* EasytrackingTests */,
 				3FDE260023140A90005315B9 /* EasytrackingUITests */,
 				3FDE25DF23140A8F005315B9 /* Products */,
+				AA47025C859D1D351DB9E5F1 /* Pods */,
+				B6493D3EE36184347D191863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +116,14 @@
 		3FDE25E023140A8F005315B9 /* Easytracking */ = {
 			isa = PBXGroup;
 			children = (
+				3FDE2DC723149CAA005315B9 /* util */,
+				3FDE2DC223149172005315B9 /* model */,
 				3FDE25E123140A8F005315B9 /* AppDelegate.swift */,
-				3FDE25E323140A8F005315B9 /* ViewController.swift */,
 				3FDE25E523140A8F005315B9 /* Main.storyboard */,
 				3FDE25E823140A90005315B9 /* Assets.xcassets */,
 				3FDE25EA23140A90005315B9 /* LaunchScreen.storyboard */,
 				3FDE25ED23140A90005315B9 /* Info.plist */,
+				3FDE2DBE23148976005315B9 /* QRDecodeViewController.swift */,
 			);
 			path = Easytracking;
 			sourceTree = "<group>";
@@ -125,6 +146,44 @@
 			path = EasytrackingUITests;
 			sourceTree = "<group>";
 		};
+		3FDE2DC223149172005315B9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE2DC323149186005315B9 /* EasyTracking.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3FDE2DC723149CAA005315B9 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		AA47025C859D1D351DB9E5F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F29B0097A738EE32365BDFB8 /* Pods-Easytracking.debug.xcconfig */,
+				A0E9DAA225F63A73E32E9C09 /* Pods-Easytracking.release.xcconfig */,
+				03AA0EB9AAE9BDCB05043C50 /* Pods-EasytrackingTests.debug.xcconfig */,
+				572C5FF92102A717CB6DD686 /* Pods-EasytrackingTests.release.xcconfig */,
+				9D62458CA12D10A0D9E3F8F7 /* Pods-EasytrackingUITests.debug.xcconfig */,
+				B344822680EF8BF4524993B8 /* Pods-EasytrackingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6493D3EE36184347D191863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DE42D55E8D5D14084E1CCBA /* Pods_Easytracking.framework */,
+				2D91A8238D57C6B4188155E2 /* Pods_EasytrackingTests.framework */,
+				350A35ABF635F46E57D59EF1 /* Pods_EasytrackingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FDE260623140A90005315B9 /* Build configuration list for PBXNativeTarget "Easytracking" */;
 			buildPhases = (
+				38116D3640BC5B70A5182132 /* [CP] Check Pods Manifest.lock */,
 				3FDE25DA23140A8F005315B9 /* Sources */,
 				3FDE25DB23140A8F005315B9 /* Frameworks */,
 				3FDE25DC23140A8F005315B9 /* Resources */,
+				9DCAD37167A5845CB9B2BBB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FDE260923140A90005315B9 /* Build configuration list for PBXNativeTarget "EasytrackingTests" */;
 			buildPhases = (
+				B6E4E1B95B4A5CB3731872AC /* [CP] Check Pods Manifest.lock */,
 				3FDE25EE23140A90005315B9 /* Sources */,
 				3FDE25EF23140A90005315B9 /* Frameworks */,
 				3FDE25F023140A90005315B9 /* Resources */,
@@ -167,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FDE260C23140A90005315B9 /* Build configuration list for PBXNativeTarget "EasytrackingUITests" */;
 			buildPhases = (
+				A25167A9F820B910BA45BCE3 /* [CP] Check Pods Manifest.lock */,
 				3FDE25F923140A90005315B9 /* Sources */,
 				3FDE25FA23140A90005315B9 /* Frameworks */,
 				3FDE25FB23140A90005315B9 /* Resources */,
@@ -251,13 +314,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38116D3640BC5B70A5182132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easytracking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCAD37167A5845CB9B2BBB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easytracking/Pods-Easytracking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easytracking/Pods-Easytracking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easytracking/Pods-Easytracking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A25167A9F820B910BA45BCE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasytrackingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E4E1B95B4A5CB3731872AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasytrackingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FDE25DA23140A8F005315B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDE25E423140A8F005315B9 /* ViewController.swift in Sources */,
+				3FDE2DBF23148976005315B9 /* QRDecodeViewController.swift in Sources */,
 				3FDE25E223140A8F005315B9 /* AppDelegate.swift in Sources */,
+				3FDE2DC423149186005315B9 /* EasyTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +580,7 @@
 		};
 		3FDE260723140A90005315B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29B0097A738EE32365BDFB8 /* Pods-Easytracking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +599,7 @@
 		};
 		3FDE260823140A90005315B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E9DAA225F63A73E32E9C09 /* Pods-Easytracking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +618,7 @@
 		};
 		3FDE260A23140A90005315B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AA0EB9AAE9BDCB05043C50 /* Pods-EasytrackingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +640,7 @@
 		};
 		3FDE260B23140A90005315B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572C5FF92102A717CB6DD686 /* Pods-EasytrackingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +662,7 @@
 		};
 		3FDE260D23140A90005315B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D62458CA12D10A0D9E3F8F7 /* Pods-EasytrackingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +683,7 @@
 		};
 		3FDE260E23140A90005315B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B344822680EF8BF4524993B8 /* Pods-EasytrackingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

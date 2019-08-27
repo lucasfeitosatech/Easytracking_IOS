@@ -4,7 +4,9 @@
 target 'Easytracking' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  platform :ios, '8.0'
+pod 'ZXingObjC', '~> 3.6.4'
+pod 'Alamofire', '~> 4.8.0'
   # Pods for Easytracking
 
   target 'EasytrackingTests' do
