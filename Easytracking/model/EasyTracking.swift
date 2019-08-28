@@ -28,6 +28,7 @@ class EasyTracking: NSObject {
         self.x = x
         self.calculateVariables()
         print("x: \(x) y:\(y) k:\(k) n:\(n) t:\(t) QR:\(bytesQR)")
+        print("padY: \(padY) padRS:\(padRS) padQR:\(padQR)")
     }
     
     private func calculateVariables(){

@@ -235,15 +235,15 @@ extension QRDecodeViewController {
         
         var binary = ""
         for i in 34...rawBytes.count - 1 {
-            let b = rawBytes[i]
-            var bits = String(b,radix: 2)
-            bits = bits.padding(toLength: 8, withPad: "0", startingAt: 0)
-            print("b: \(b) + bits: \(bits)")
+            let b = Int(rawBytes[i])
+            var bits = b.toBinary
+            while bits.count != 8 {
+                bits = "0" + bits
+            }
             binary += bits
         }
-        print(binary.count)
         binary.removeLast(easyTracking.padQR)
-        print(binary.count)
+        print("Binary: \(binary)")
         return binary
     }
     
@@ -254,8 +254,9 @@ extension QRDecodeViewController {
             
             switch response.result {
             case let .success(value):
-                print(value)
+                //print(value)
                 let infoRS = Array(value)
+                print("redu: \(infoRS)")
                 self.decode2bitsInfo(from: infoRS)
                 self.join2bitsInfoAnd6bitsInfo()
                 self.decodeOTPBits()
@@ -279,10 +280,12 @@ extension QRDecodeViewController {
         redu = ""
         var j = 0
         for i in easyTracking.k...easyTracking.n - 1 {
-            let b = info[j]
-            var bits = String(b,radix: 2)
-            bits = bits.padding(toLength: 8, withPad: "0", startingAt: 0)
-            print("b: \(b) + bits: \(bits)")
+            let b = Int(info[j])
+            var bits = b.toBinary
+            while bits.count != 8 {
+                bits = "0" + bits
+            }
+            print("REDU b: \(b) + bits: \(bits)")
             redu += bits
             data.array[i] = Int32(info[j])
             j+=1
@@ -295,13 +298,16 @@ extension QRDecodeViewController {
         }
         binaryRS = ""
         for i in 0...easyTracking.k - 1 {
-            let b = data.array[i]
-            var bits = String(b,radix: 2)
-            bits = bits.padding(toLength: 8, withPad: "0", startingAt: 0)
-            print("b: \(b) + bits: \(bits)")
+            let b = Int(data.array[i])
+            var bits = b.toBinary
+            while bits.count != 8 {
+                bits = "0" + bits
+            }
+            //print("K b: \(b) + bits: \(bits)")
             binaryRS += bits
         }
         binaryRS.removeLast(easyTracking.padRS)
+        print("BinaryRS sem Padding: \(binaryRS.count)")
     
     }
     
@@ -327,6 +333,7 @@ extension QRDecodeViewController {
                 cont = 0;
             }
         }
+        print("Binary: \(binaryFinal)")
         
     }
     
@@ -335,7 +342,7 @@ extension QRDecodeViewController {
         var redu = Array(self.redu)
         var binaryFinal = Array(self.binaryFinal)
         var cont2 = 0;
-        for i in 0...easyTracking.y {
+        for i in 0...easyTracking.y - 1 {
             let pos1 = 8 * i + 2;
             let xor1 = (String(binaryFinal[pos1]) as NSString).integerValue ^ (String(redu[cont2]) as NSString).integerValue
             binaryFinal[pos1] = Character.init(String(xor1))
@@ -366,19 +373,19 @@ extension QRDecodeViewController {
         var bits7 = ""
         var infoFinal = ""
         var cont = 0;
-        for i in 0 ... binaryDecodedOTP.count - 1 {
+        for i in 0 ... binaryDecodedOTP.count - 1 - easyTracking.padY {
             
             bits7 += String(binaryDecodedOTP[i])
             cont+=1;
             if cont == 7 {
-                let number = strtoul(bits7, nil, 2)
+                let number = bits7.binaryToDecimal
                 let c = String(describing: UnicodeScalar(UInt8(number)))
                 infoFinal += c
                 bits7 = ""
                 cont = 0
             }
         }
-        print(infoFinal)
+        print(infoFinal.utf8)
         
     }
     
@@ -399,10 +406,24 @@ extension QRDecodeViewController: ZXCaptureDelegate {
             return
         }
         let rawBytes = Array(rawData)
-        let x = rawBytes[0] + rawBytes[1]
+        var b1 = Int(rawBytes[0]).toBinary
+        while b1.count != 8 {
+            b1 = "0" + b1
+        }
+        var b2 = Int(rawBytes[1]).toBinary
+        while b2.count != 8 {
+            b2 = "0" + b2
+        }
+        let xs = b1 + b2
+        let x = xs.binaryToDecimal
+        
+        //let x = 388
+        print("x bytes: \(x)")
         self.easyTracking = EasyTracking(from: Int(x))
         self.id = getId(from:rawBytes)
+        print("id bytes: \(id!) idLength: \(id.count)")
         self.binary = getBinary(from:rawBytes)
+        print("bits from QR Code: \(binary.count)")
         downLoadRedundancy(from: id)
         
         
@@ -416,6 +437,30 @@ extension QRDecodeViewController: ZXCaptureDelegate {
         }
     }
     
+}
+
+extension Int {
+    var toBinary: String {
+        return String(self, radix: 2)
+    }
+    var toHexa: String {
+        return String(format:"%02X", self)
+    }
+}
+
+extension String {
+    var hexaToDecimal: Int {
+        return Int(strtoul(self, nil, 16))
+    }
+    var hexaToBinary: String {
+        return hexaToDecimal.toBinary
+    }
+    var binaryToDecimal: Int {
+        return Int(strtoul(self, nil, 2))
+    }
+    var binaryToHexa: String {
+        return binaryToDecimal.toHexa
+    }
 }
 
 
