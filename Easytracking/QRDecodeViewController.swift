@@ -3,7 +3,7 @@
 //  Easytracking
 //
 //  Created by Lucas Freitas on 26/08/19.
-//  Copyright © 2019 First Decision. All rights reserved.
+//  Copyright © 2019 lucasfeitosa.tech. All rights reserved.
 //
 
 import UIKit
@@ -333,7 +333,7 @@ extension QRDecodeViewController {
                 cont = 0;
             }
         }
-        print("Binary: \(binaryFinal)")
+        //print("Binary: \(binaryFinal)")
         
     }
     
