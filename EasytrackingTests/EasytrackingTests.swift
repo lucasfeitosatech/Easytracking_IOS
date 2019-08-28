@@ -3,7 +3,7 @@
 //  EasytrackingTests
 //
 //  Created by Lucas Freitas on 26/08/19.
-//  Copyright © 2019 First Decision. All rights reserved.
+//  Copyright © 2019. All rights reserved.
 //
 
 import XCTest
